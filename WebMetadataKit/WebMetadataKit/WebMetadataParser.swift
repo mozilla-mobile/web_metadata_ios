@@ -9,7 +9,7 @@ public class WebMetadataParser {
     private let libraryUserScript: WKUserScript
     private let parserWrapperUserScript: WKUserScript
 
-    init?() {
+    public init?() {
         let bundle = NSBundle(forClass: WebMetadataParser.self)
         guard let libraryPath = bundle.pathForResource("page-metadata-parser.bundle", ofType: "js"),
            let parserWrapperPath = bundle.pathForResource("MetadataParser", ofType: "js"),
@@ -22,7 +22,7 @@ public class WebMetadataParser {
         parserWrapperUserScript = WKUserScript(source: parserWrapperSource, injectionTime: .AtDocumentEnd, forMainFrameOnly: false)
     }
 
-    func addUserScriptsIntoWebView(webView: WKWebView) {
+    public func addUserScriptsIntoWebView(webView: WKWebView) {
         webView.configuration.userContentController.addUserScript(libraryUserScript)
         webView.configuration.userContentController.addUserScript(parserWrapperUserScript)
     }

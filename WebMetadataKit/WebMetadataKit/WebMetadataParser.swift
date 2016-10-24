@@ -12,7 +12,7 @@ public class WebMetadataParser {
     public init?() {
         let bundle = NSBundle(forClass: WebMetadataParser.self)
         guard let libraryPath = bundle.pathForResource("page-metadata-parser.bundle", ofType: "js"),
-           let parserWrapperPath = bundle.pathForResource("MetadataParser", ofType: "js"),
+           let parserWrapperPath = bundle.pathForResource("WebMetadataParser", ofType: "js"),
            librarySource = try? NSString(contentsOfFile: libraryPath, encoding: NSUTF8StringEncoding) as String,
            parserWrapperSource = try? NSString(contentsOfFile: parserWrapperPath, encoding: NSUTF8StringEncoding) as String else {
             return nil

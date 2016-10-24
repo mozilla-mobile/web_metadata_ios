@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62A56C01DBE8265004703EA /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = E62A56BF1DBE8265004703EA /* Cartfile.private */; };
+		E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */ = {isa = PBXBuildFile; fileRef = E62A56C11DBE826B004703EA /* bootstrap.sh */; };
+		E62A56C41DBE8276004703EA /* page-metadata-parser.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */; };
 		E646040D1DA6A0210006B3B8 /* WebMetadataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E646040B1DA6A0210006B3B8 /* WebMetadataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E646043F1DA6A1F30006B3B8 /* page-metadata-parser.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E646043E1DA6A1F30006B3B8 /* page-metadata-parser.bundle.js */; };
 		E64604411DA6A2110006B3B8 /* WebMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64604401DA6A2110006B3B8 /* WebMetadataParser.swift */; };
 		E64604481DA6A2B10006B3B8 /* WebMetadataParser.js in Resources */ = {isa = PBXBuildFile; fileRef = E64604471DA6A2B10006B3B8 /* WebMetadataParser.js */; };
 		E64604591DA6AB730006B3B8 /* WebMetadataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64604081DA6A0210006B3B8 /* WebMetadataKit.framework */; };
@@ -26,26 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E62A56BF1DBE8265004703EA /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile.private; path = ../Cartfile.private; sourceTree = "<group>"; };
+		E62A56C11DBE826B004703EA /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bootstrap.sh; path = ../bootstrap.sh; sourceTree = "<group>"; };
+		E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "page-metadata-parser.bundle.js"; path = "../Carthage/Checkouts/page-metadata-parser/client/page-metadata-parser.bundle.js"; sourceTree = "<group>"; };
 		E64604081DA6A0210006B3B8 /* WebMetadataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMetadataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E646040B1DA6A0210006B3B8 /* WebMetadataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMetadataKit.h; sourceTree = "<group>"; };
 		E646040C1DA6A0210006B3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E64604131DA6A02D0006B3B8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
-		E64604181DA6A08B0006B3B8 /* .babelrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .babelrc; sourceTree = "<group>"; };
-		E64604191DA6A08B0006B3B8 /* .eslintignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .eslintignore; sourceTree = "<group>"; };
-		E646041A1DA6A08B0006B3B8 /* .eslintrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .eslintrc; sourceTree = "<group>"; };
-		E646041B1DA6A08B0006B3B8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		E646041E1DA6A08B0006B3B8 /* circle.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
-		E646041F1DA6A08B0006B3B8 /* karma.conf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = karma.conf.js; sourceTree = "<group>"; };
-		E64604201DA6A08B0006B3B8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		E64604211DA6A08B0006B3B8 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		E64604221DA6A08B0006B3B8 /* parser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = parser.js; sourceTree = "<group>"; };
-		E64604231DA6A08B0006B3B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E64604251DA6A08B0006B3B8 /* getMetadata.test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getMetadata.test.js; sourceTree = "<group>"; };
-		E64604261DA6A08B0006B3B8 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
-		E64604271DA6A08B0006B3B8 /* metadataRules.test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = metadataRules.test.js; sourceTree = "<group>"; };
-		E64604281DA6A08B0006B3B8 /* test-utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "test-utils.js"; sourceTree = "<group>"; };
-		E64604291DA6A08B0006B3B8 /* webpack.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = webpack.config.js; sourceTree = "<group>"; };
-		E646043E1DA6A1F30006B3B8 /* page-metadata-parser.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "page-metadata-parser.bundle.js"; sourceTree = "<group>"; };
 		E64604401DA6A2110006B3B8 /* WebMetadataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebMetadataParser.swift; sourceTree = "<group>"; };
 		E64604471DA6A2B10006B3B8 /* WebMetadataParser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebMetadataParser.js; sourceTree = "<group>"; };
 		E64604541DA6AB720006B3B8 /* WebMetadataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebMetadataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +63,8 @@
 		E64603FE1DA6A0210006B3B8 = {
 			isa = PBXGroup;
 			children = (
-				E64604131DA6A02D0006B3B8 /* Cartfile */,
+				E62A56C11DBE826B004703EA /* bootstrap.sh */,
+				E62A56BF1DBE8265004703EA /* Cartfile.private */,
 				E646040A1DA6A0210006B3B8 /* WebMetadataKit */,
 				E64604551DA6AB730006B3B8 /* WebMetadataKitTests */,
 				E64604161DA6A06A0006B3B8 /* Third Party */,
@@ -106,49 +95,9 @@
 		E64604161DA6A06A0006B3B8 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				E64604171DA6A08B0006B3B8 /* page-metadata-parser */,
+				E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */,
 			);
 			name = "Third Party";
-			sourceTree = "<group>";
-		};
-		E64604171DA6A08B0006B3B8 /* page-metadata-parser */ = {
-			isa = PBXGroup;
-			children = (
-				E646043D1DA6A1F30006B3B8 /* client */,
-				E64604181DA6A08B0006B3B8 /* .babelrc */,
-				E64604191DA6A08B0006B3B8 /* .eslintignore */,
-				E646041A1DA6A08B0006B3B8 /* .eslintrc */,
-				E646041B1DA6A08B0006B3B8 /* .gitignore */,
-				E646041E1DA6A08B0006B3B8 /* circle.yml */,
-				E646041F1DA6A08B0006B3B8 /* karma.conf.js */,
-				E64604201DA6A08B0006B3B8 /* LICENSE */,
-				E64604211DA6A08B0006B3B8 /* package.json */,
-				E64604221DA6A08B0006B3B8 /* parser.js */,
-				E64604231DA6A08B0006B3B8 /* README.md */,
-				E64604241DA6A08B0006B3B8 /* tests */,
-				E64604291DA6A08B0006B3B8 /* webpack.config.js */,
-			);
-			name = "page-metadata-parser";
-			path = "../Carthage/Checkouts/page-metadata-parser";
-			sourceTree = "<group>";
-		};
-		E64604241DA6A08B0006B3B8 /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				E64604251DA6A08B0006B3B8 /* getMetadata.test.js */,
-				E64604261DA6A08B0006B3B8 /* index.js */,
-				E64604271DA6A08B0006B3B8 /* metadataRules.test.js */,
-				E64604281DA6A08B0006B3B8 /* test-utils.js */,
-			);
-			path = tests;
-			sourceTree = "<group>";
-		};
-		E646043D1DA6A1F30006B3B8 /* client */ = {
-			isa = PBXGroup;
-			children = (
-				E646043E1DA6A1F30006B3B8 /* page-metadata-parser.bundle.js */,
-			);
-			path = client;
 			sourceTree = "<group>";
 		};
 		E64604551DA6AB730006B3B8 /* WebMetadataKitTests */ = {
@@ -178,7 +127,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64604101DA6A0210006B3B8 /* Build configuration list for PBXNativeTarget "WebMetadataKit" */;
 			buildPhases = (
-				E64604391DA6A0AC0006B3B8 /* ShellScript */,
 				E64604031DA6A0210006B3B8 /* Sources */,
 				E64604041DA6A0210006B3B8 /* Frameworks */,
 				E64604051DA6A0210006B3B8 /* Headers */,
@@ -257,8 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E646043F1DA6A1F30006B3B8 /* page-metadata-parser.bundle.js in Resources */,
 				E64604481DA6A2B10006B3B8 /* WebMetadataParser.js in Resources */,
+				E62A56C01DBE8265004703EA /* Cartfile.private in Resources */,
+				E62A56C41DBE8276004703EA /* page-metadata-parser.bundle.js in Resources */,
+				E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,22 +221,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E64604391DA6A0AC0006B3B8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd ../Carthage/Checkouts/page-metadata-parser\nnpm install\nnpm run clientize";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E64604031DA6A0210006B3B8 /* Sources */ = {

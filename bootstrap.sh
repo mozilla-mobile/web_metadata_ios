@@ -29,10 +29,16 @@ if [ ! -z "$XCS_BOT_ID"  ]; then
 fi
 
 if [ ! -f Carthage/Cartfile.resolved ]; then
+  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  PARSER_PATH="Carthage/Checkouts/page-metadata-parser"
+
   carthage bootstrap $CARTHAGE_VERBOSE --platform ios --color auto
 
   # Run npm to install and build page-metadata-parser.bundle.js
-  cd Carthage/Checkouts/page-metadata-parser
+  cd $PARSER_PATH
   npm install
   npm run clientize
+
+  cd $DIR
+  cp "$PARSER_PATH/client/page-metadata-parser.bundle.js" "$DIR/WebMetadataKit/Mozilla"
 fi

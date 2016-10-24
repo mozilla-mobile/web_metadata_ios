@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E62A56C01DBE8265004703EA /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = E62A56BF1DBE8265004703EA /* Cartfile.private */; };
 		E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */ = {isa = PBXBuildFile; fileRef = E62A56C11DBE826B004703EA /* bootstrap.sh */; };
-		E62A56C41DBE8276004703EA /* page-metadata-parser.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */; };
+		E62A56DB1DBE8607004703EA /* page-metadata-parser.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E62A56DA1DBE8607004703EA /* page-metadata-parser.bundle.js */; };
 		E646040D1DA6A0210006B3B8 /* WebMetadataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E646040B1DA6A0210006B3B8 /* WebMetadataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E64604411DA6A2110006B3B8 /* WebMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64604401DA6A2110006B3B8 /* WebMetadataParser.swift */; };
 		E64604481DA6A2B10006B3B8 /* WebMetadataParser.js in Resources */ = {isa = PBXBuildFile; fileRef = E64604471DA6A2B10006B3B8 /* WebMetadataParser.js */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		E62A56BF1DBE8265004703EA /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile.private; path = ../Cartfile.private; sourceTree = "<group>"; };
 		E62A56C11DBE826B004703EA /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bootstrap.sh; path = ../bootstrap.sh; sourceTree = "<group>"; };
-		E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "page-metadata-parser.bundle.js"; path = "../Carthage/Checkouts/page-metadata-parser/client/page-metadata-parser.bundle.js"; sourceTree = "<group>"; };
+		E62A56DA1DBE8607004703EA /* page-metadata-parser.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "page-metadata-parser.bundle.js"; sourceTree = "<group>"; };
 		E64604081DA6A0210006B3B8 /* WebMetadataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebMetadataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E646040B1DA6A0210006B3B8 /* WebMetadataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebMetadataKit.h; sourceTree = "<group>"; };
 		E646040C1DA6A0210006B3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E62A56D91DBE84A5004703EA /* Mozilla */ = {
+			isa = PBXGroup;
+			children = (
+				E62A56DA1DBE8607004703EA /* page-metadata-parser.bundle.js */,
+			);
+			path = Mozilla;
+			sourceTree = SOURCE_ROOT;
+		};
 		E64603FE1DA6A0210006B3B8 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +75,7 @@
 				E62A56BF1DBE8265004703EA /* Cartfile.private */,
 				E646040A1DA6A0210006B3B8 /* WebMetadataKit */,
 				E64604551DA6AB730006B3B8 /* WebMetadataKitTests */,
-				E64604161DA6A06A0006B3B8 /* Third Party */,
+				E62A56D91DBE84A5004703EA /* Mozilla */,
 				E64604091DA6A0210006B3B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,14 +98,6 @@
 				E64604471DA6A2B10006B3B8 /* WebMetadataParser.js */,
 			);
 			path = WebMetadataKit;
-			sourceTree = "<group>";
-		};
-		E64604161DA6A06A0006B3B8 /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				E62A56C31DBE8276004703EA /* page-metadata-parser.bundle.js */,
-			);
-			name = "Third Party";
 			sourceTree = "<group>";
 		};
 		E64604551DA6AB730006B3B8 /* WebMetadataKitTests */ = {
@@ -207,7 +207,7 @@
 			files = (
 				E64604481DA6A2B10006B3B8 /* WebMetadataParser.js in Resources */,
 				E62A56C01DBE8265004703EA /* Cartfile.private in Resources */,
-				E62A56C41DBE8276004703EA /* page-metadata-parser.bundle.js in Resources */,
+				E62A56DB1DBE8607004703EA /* page-metadata-parser.bundle.js in Resources */,
 				E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

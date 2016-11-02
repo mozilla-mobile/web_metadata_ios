@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E62A56C01DBE8265004703EA /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = E62A56BF1DBE8265004703EA /* Cartfile.private */; };
-		E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */ = {isa = PBXBuildFile; fileRef = E62A56C11DBE826B004703EA /* bootstrap.sh */; };
 		E62A56DB1DBE8607004703EA /* page-metadata-parser.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E62A56DA1DBE8607004703EA /* page-metadata-parser.bundle.js */; };
 		E646040D1DA6A0210006B3B8 /* WebMetadataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E646040B1DA6A0210006B3B8 /* WebMetadataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E64604411DA6A2110006B3B8 /* WebMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64604401DA6A2110006B3B8 /* WebMetadataParser.swift */; };
@@ -206,9 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64604481DA6A2B10006B3B8 /* WebMetadataParser.js in Resources */,
-				E62A56C01DBE8265004703EA /* Cartfile.private in Resources */,
 				E62A56DB1DBE8607004703EA /* page-metadata-parser.bundle.js in Resources */,
-				E62A56C21DBE826B004703EA /* bootstrap.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
